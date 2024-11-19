@@ -1,7 +1,10 @@
-import 'package:aslab_travel/screens/SpalshScreen.dart';
+import 'package:aslab_travel/latihanmodul/pertemuan5.dart';
+import 'package:aslab_travel/latihanmodul/pertemuan6.dart';
+import 'package:aslab_travel/screens/SplashScreen.dart';
+import 'package:aslab_travel/screens/lading_page.dart';
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(TravelApp());
 }
 
@@ -12,23 +15,7 @@ class TravelApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SpalshScreen(),
-    );
-  }
-}
-
-class Heading extends StatelessWidget {
-  final String text;
-  const Heading({super.key, required this.text});
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: TextStyle(
-        fontSize: 24,
-        fontWeight: FontWeight.bold,
-      ),
+      home: LandingPageOne(),
     );
   }
 }
